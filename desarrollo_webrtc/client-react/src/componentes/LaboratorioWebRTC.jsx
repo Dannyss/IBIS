@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../css/LaboratorioWebRTC.css';
-
-const URL_SERVIDOR_SENALIZACION = 'ws://192.168.1.14:8080';
+// 📡 Cambiamos la IP local por tu servidor permanente en la nube
+const URL_SERVIDOR_SENALIZACION = 'wss://ibis-nuh3.onrender.com';
+//const URL_SERVIDOR_SENALIZACION = 'ws://192.168.1.14:8080';
 //const URL_SERVIDOR_SENALIZACION = 'ws://172.20.10.5:8080';
 const CONFIG_PEER = {
   iceServers: [
