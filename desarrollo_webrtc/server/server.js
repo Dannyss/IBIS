@@ -40,5 +40,9 @@ wss.on('connection', (ws) => {
   });
 });
 
-// Arrancamos el servidor en el puerto 8080 (Ollama usa el 11434, no habrá conflictos)
-server.listen(8080);
+// Detecta el puerto de la nube o usa el 8080 si estás en local
+const PORT = process.env.PORT || 8080;
+
+server.listen(PORT, () => {
+  console.log(`🚀 Servidor de señalización WebRTC activo en el puerto ${PORT}`);
+});
