@@ -1,0 +1,53 @@
+/* Estilos generales para todos los dispositivos */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+ 
+li {
+list-style: none;
+}
+.columna-izquierda {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.columna-derecha {
+  width: 100%;
+}
+
+.info-curso {
+  overflow: hidden;
+}
+.icono-curso{
+  width: 10%;
+}
+
+/* Estilos específicos para pantallas más pequeñas que PC */
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .columna-izquierda {
+    width: 25%;
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .columna-derecha {
+    width: 75%;
+    order: 2;
+  }
+
+  /* Estilos para el footer en pantallas más pequeñas */
+  footer {
+    height: 50px; /* Ajusta la altura del footer según tus necesidades */
+  }
+}

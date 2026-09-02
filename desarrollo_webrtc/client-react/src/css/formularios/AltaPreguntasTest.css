@@ -1,0 +1,30 @@
+
+  /* Código referente a CSS de preguntas */
+
+  .form-pregunta {
+    margin: 20px 0;
+  }
+  
+  .form-pregunta-titulo {
+    margin-bottom: 10px;
+  }
+  
+  .form-opciones {
+    margin-bottom: 20px;
+  }
+  
+  .form-opcion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .form-opcion input[type="text"] {
+    margin-right: 10px;
+    flex-grow: 1;
+  }
+  
+  .form-opcion input[type="radio"] {
+    margin-left: 10px;
+  }
+  

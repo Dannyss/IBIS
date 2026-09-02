@@ -1,0 +1,151 @@
+.form-curso-titulo {
+    background-color: #f1f4f5;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.contenedor-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    margin: 5px;
+}
+
+#title {
+    background: none;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    flex: 1; /* Hace que el campo de entrada ocupe el espacio restante */
+}
+
+#title {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Para ocupar todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total del input */
+    transition: border-color 0.3s ease; /* Agrega una transición suave para el cambio de color del borde */
+}
+
+#title:focus {
+    border-color: #007bff; /* Cambia el color del borde cuando el input está enfocado */
+    outline: none; /* Quita el borde de enfoque predeterminado */
+}
+
+
+.form-curso-descripcion label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-curso-descripcion textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total del textarea */
+}
+
+.contenedor-seccion button {
+    width: auto;
+    padding: 10px 20px; /* Ajusta el padding del botón para que tenga un aspecto más equilibrado */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contenedor-seccion button:hover {
+    background-color: #0056b3;
+}
+.form-curso-titulo input[type="text"] {
+    width: 100%; /* Opcional: ajusta el ancho según tus necesidades */
+    padding: 8px; /* Ajusta el padding según tus preferencias */
+    border: 1px solid #ccc; /* Añade un borde */
+    border-radius: 4px; /* Añade esquinas redondeadas */
+    box-sizing: border-box; /* Asegura que el tamaño total incluya el relleno y el borde */
+    margin-bottom: 10px; /* Espacio entre el input y el siguiente elemento */
+  }
+  
+  .form-curso-titulo label {
+    font-weight: bold; /* Hace que el texto del label sea negrita */
+    display: block; /* Hace que el label sea un bloque para que ocupe toda la anchura disponible */
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+  }
+
+
+  /* Alta preguntas*/
+
+  .form-curso {
+    margin: 20px 0;
+  }
+  
+  .form-curso-titulo,
+  .form-curso-descripcion {
+    margin-bottom: 10px;
+  }
+  
+  .form-curso-titulo label,
+  .form-curso-descripcion label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-curso-titulo input,
+  .form-curso-descripcion textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .contenedor-seccion button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contenedor-seccion button:hover {
+    background-color: #45a049;
+  }
+  
+  .form-texto-plano {
+    margin-top: 20px;
+  }
+  
+  .form-texto-plano label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-texto-plano textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .form-texto-plano button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-texto-plano button:hover {
+    background-color: #45a049;
+  }
+  

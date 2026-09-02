@@ -1,0 +1,74 @@
+/* Estilos para los inputs en general */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total del input */
+    transition: border-color 0.3s ease; /* Agrega una transición suave para el cambio de color del borde */
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff; /* Cambia el color del borde cuando el input está enfocado */
+    outline: none; /* Quita el borde de enfoque predeterminado */
+  }
+  
+  /* Estilos específicos para los inputs en los componentes AltaSeccionCurso y AltaCursoFormulario */
+  #title {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  #title:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Estilos para el botón */
+  button {
+    padding: 10px 20px; /* Ajusta el padding del botón para que tenga un aspecto más equilibrado */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* Espacio superior para separar el botón del resto del contenido */
+    display: block; /* Hace que el botón se muestre como un bloque, centrando automáticamente */
+    margin-left: auto; /* Centra horizontalmente el botón */
+    margin-right: auto; /* Centra horizontalmente el botón */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Otros estilos existentes */
+  .form-curso {
+         margin: 5px;
+        padding: 10px;
+ 
+  }
+  
+  .contenedor-seccion {
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+  }
+  
+  .cabecera-seccion {
+    width: 33%;
+  }
+  
+  .span-seccion {
+    font-size: 10px;
+    color: grey;
+  }
+  

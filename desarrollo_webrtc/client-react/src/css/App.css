@@ -1,0 +1,15 @@
+.color1 {color: #141416;}
+.color2 {color: #0d436d;}
+.color3 {background-color: #9da300;}
+.color4 {color: #fff836;}
+.color5 {color: #fffbd1;}
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* asegura que el contenedor se extienda hasta el final de la página */
+    overflow-x: hidden;
+}
+footer {
+    height: 100px;
+}

@@ -1,0 +1,204 @@
+/* 🧪 LABORATORIO WEBRTC
+   Estilos del panel de pruebas P2P multidispositivo.
+   Reutilizan las variables CSS globales de src/index.css
+   para respetar los temas claro y oscuro de la aplicación. */
+
+.laboratorio-webrtc {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  color: var(--text);
+  text-align: center;
+}
+
+.laboratorio-webrtc h2 {
+  margin: 0 0 16px;
+}
+
+/* 1️⃣ Indicadores de estado */
+.panel-estados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.indicador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 220px;
+  padding: 12px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--code-bg);
+}
+
+.badge {
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+
+.badge.conectado {
+  background: #16a34a; /* 🟢 Verde */
+}
+
+.badge.desconectado {
+  background: #dc2626; /* 🔴 Rojo */
+}
+
+.badge.conectando {
+  background: #d97706; /* 🟠 Ámbar */
+}
+
+.etiqueta {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.id-sesion {
+  font-family: var(--mono);
+  font-size: 13px;
+  word-break: break-all;
+  margin: 0 0 8px;
+}
+
+.pista {
+  font-size: 14px;
+  opacity: 0.8;
+  margin: 0 0 12px;
+}
+
+.mensaje-error {
+  margin: 0 0 12px;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* 2️⃣ Ventanas de vídeo */
+.ventanas-video {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.panel-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+  border: 1px solid var(--border);
+}
+
+.panel-video-titulo {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 13px;
+}
+
+.video-local,
+.video-remoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🪞 Efecto espejo en la cámara local */
+.video-local {
+  transform: scaleX(-1);
+}
+
+/* 3️⃣ Controles */
+.controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.boton {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+.boton:hover:not(:disabled) {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.boton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.boton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.boton-iniciar {
+  background: var(--accent);
+}
+
+.boton-colgar {
+  background: #dc2626;
+}
+
+/* 4️⃣ Registro de eventos */
+.registro {
+  margin-top: 8px;
+  padding: 12px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--code-bg);
+  text-align: left;
+}
+
+.registro h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.registro ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.registro li {
+  padding: 3px 0;
+  border-bottom: 1px dashed var(--border);
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.registro li:last-child {
+  border-bottom: none;
+}
+
+.registro .hora {
+  margin-right: 8px;
+  color: var(--accent);
+  white-space: nowrap;
+}
