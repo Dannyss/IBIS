@@ -29,7 +29,7 @@ const RutasPrivadas = ({ Inicializador }) => {
   if (location.pathname === '/miriam') {
     return (
       <Routes>
-        <Route path="/test-webrtc" element={<LaboratorioWebRTC />} />
+        <Route path="/miriam" element={<LaboratorioWebRTC />} />
       </Routes>
     );
   }
