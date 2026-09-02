@@ -24,6 +24,15 @@ const RutasPrivadas = ({ Inicializador }) => {
     );
   }
 
+  // 🧪 Ruta pública del Laboratorio WebRTC: no exige iniciar sesión,
+  // es una batería de pruebas abierta para probar varias dispositivos.
+  if (location.pathname === '/miriam') {
+    return (
+      <Routes>
+        <Route path="/test-webrtc" element={<LaboratorioWebRTC />} />
+      </Routes>
+    );
+  }
 
   if (!currentUser && location.pathname !== '/login') {
     return <Navigate to="/login" />;
